@@ -1,0 +1,202 @@
+.HomePage {
+  background-color: #161b33;
+  padding-top: 10%;
+  margin: 0;
+}
+.Home {
+  padding: 40px 120px;
+  color: #ffff;
+  overflow: hidden;
+  z-index: 1;
+}
+.Home img {
+  width: 100%;
+}
+.Home h1 {
+  font-size: 80px;
+}
+.Home p {
+  font-size: 20px;
+  color: #ffffff73;
+  margin: 40px 0;
+}
+.Home button {
+  background-color: #4f46e5;
+  color: #ffff;
+  border-radius: 50px;
+  border: none;
+  padding: 12px 22px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.Homee {
+  margin-top: -7%;
+  padding-bottom: 5%;
+}
+.Homee ul {
+  margin-top: -14%;
+  z-index: 10;
+}
+.Homee ul li {
+  display: inline;
+  font-size: 24px;
+  padding-right: 50px;
+  color: #ffffff73;
+}
+.content {
+  border-radius: 100px;
+  padding: 20px;
+  margin-top: -8%;
+  position: relative;
+  background-color: #1d2746;
+  color: #ffff;
+  z-index: 100;
+}
+.stays svg {
+  display: inline;
+  width: 10%;
+}
+.Homee .nav {
+  display: flex;
+  gap: 15px;
+}
+.imgheader {
+  position: relative;
+  z-index: 90;
+}
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-text svg {
+  flex-shrink: 0;
+  color: #ffffff73;
+}
+
+.icon-text div {
+  display: flex;
+  flex-direction: column;
+}
+.icon-text p {
+  font-size: 14px;
+  color: #ffffff73;
+}
+.icon-text h2 {
+  font-size: 18px;
+  color: #ffff;
+  font-weight: bold;
+}
+.Heading {
+  padding: 80px 0;
+}
+.Heading h2 {
+  color: #ffff;
+  font-size: 38px;
+}
+.Heading p {
+  color: #ffffff73;
+  font-size: 22px;
+  margin-bottom: 6%;
+}
+
+.Happening {
+  padding: 80px 0;
+}
+.Happening h2 {
+  color: #ffff;
+  font-size: 38px;
+  margin-bottom: 10%;
+}
+.Happening h3 {
+  color: #ffff;
+  font-size: 24px;
+  margin-top: 4%;
+}
+.Happening p {
+  color: #ffffff73;
+  font-size: 18px;
+}
+
+.Happening .one {
+  background-color: rgb(219 234 254);
+  padding: 4px 8px;
+  border-radius: 30px;
+  color: rgb(30 64 175);
+}
+.Featured {
+  background-color: #111421;
+  margin: 40px;
+  padding: 60px;
+  border-radius: 40px;
+}
+.Featured h1 {
+  color: #ffff;
+  margin-top: 4%;
+}
+.Featured p {
+  color: #ffffff73;
+  font-size: 18px;
+}
+.Featured ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: left;
+  text-align: left;
+}
+.Featured li {
+  color: #ffff;
+  padding: 10px;
+  margin-right: 30px;
+}
+.Featured li:hover {
+  background-color: #304741;
+  border-radius: 30px;
+}
+.Featured .active {
+  background-color: #024d3a;
+  border-radius: 30px;
+}
+.Featured .cart {
+  background-color: #161a2b;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #85858520;
+  margin-top: 40px;
+}
+.Featured button {
+  background-color: #4f46e5;
+  color: #ffff;
+  border-radius: 50px;
+  border: none;
+  padding: 12px 22px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.cart img {
+  width: 100%;
+}
+.cart .container {
+  margin-top: 10px;
+}
+.cart .container h3 {
+  font-size: 18px;
+  color: #ffff;
+}
+.work {
+  background-image: url(../../public/VectorHIW.2a56b4d0aa5690494df25bc0b2bb3bf6.svg);
+  background-position: top 40px center;
+  background-repeat: no-repeat;
+}
+.work .row {
+  padding: 0 130px;
+}
+.workk {
+  text-align: center;
+}
+.workk p {
+  color: #ffffff73;
+  margin-bottom: 80px;
+}
