@@ -1,6 +1,6 @@
 .HomePage {
   background-color: #161b33;
-  padding-top: 10%;
+  padding: 10% 0 5%;
   margin: 0;
 }
 .Home {
@@ -30,7 +30,7 @@
   font-weight: bold;
 }
 .Homee {
-  margin-top: -7%;
+  margin-top: -5%;
   padding-bottom: 5%;
 }
 .Homee ul {

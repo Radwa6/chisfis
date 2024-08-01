@@ -1,62 +1,36 @@
-/* أسلوب الحاوية للسلايدر */
 .slider-container {
   width: 80%;
   margin: auto;
-  position: relative; /* تأكيد أن العنصر الحاوي له موضع نسبي */
+  position: relative;
 }
 
-/* نمط الشرائح */
 .slide {
   flex: 0 0 23%;
-  margin-right: 2%;
   box-sizing: border-box;
   text-align: center;
 }
 
-/* نمط الصور داخل الشرائح */
 .slide img {
   width: 90%;
   height: auto;
+  z-index: 2;
 }
 
-/* إخفاء الأسهم الافتراضية */
 .slick-prev::before,
 .slick-next::before {
-  content: ''; /* إزالة أي نص */
-  font-size: 24px; /* تعيين حجم الأسهم */
-  color: black; /* تعيين لون الأسهم */
+  content: '';
+  font-size: 24px;
+  color: black;
 }
 
-/* وضع الأسهم تحت السلايدر */
 .slider-container .slick-prev,
 .slider-container .slick-next {
   position: absolute;
-  bottom: -40px; /* تعيين المسافة تحت السلايدر حسب الحاجة */
   width: 100%;
-  text-align: center;
-  background: transparent; /* تعيين الخلفية لتكون شفافة */
-  z-index: 1; /* التأكد من أن الأسهم تكون فوق العناصر الأخرى */
+  background: transparent;
 }
 
-/* تحديد موضع السهم الأيسر */
-.slider-container .slick-prev {
-  left: 10px; /* تعيين موضع السهم الأيسر */
-}
-
-/* تحديد موضع السهم الأيمن */
-.slider-container .slick-next {
-  right: 10px; /* تعيين موضع السهم الأيمن */
-}
-
-/* نمط النص داخل الشرائح */
 .slide p {
   font-size: 1em;
   margin-top: 5px;
-}
-/* إخفاء النص الافتراضي للأسهم */
-.slick-prev::before,
-.slick-next::before {
-  content: '' !important; /* إزالة أي نص افتراضي */
-  font-size: 24px; /* تعيين حجم الأسهم إذا لزم الأمر */
-  color: black; /* تعيين لون الأسهم */
 }

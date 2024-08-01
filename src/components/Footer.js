@@ -43,7 +43,7 @@ function Footer() {
               <i class='lab la-youtube'></i> Youtube
             </li>
             <li>
-              <i class='lab la-instagram'></i>Instagram
+              <i class='lab la-instagram'></i> Instagram
             </li>
           </ul>
         </div>
