@@ -4,7 +4,7 @@ import Slider from './Slider'
 import SliderComponent from './SliderComponent'
 
 const Home = () => {
-  const [selectedTab, setSelectedTab] = useState('')
+  const [selectedTab, setSelectedTab] = useState('stays')
 
   const handleTabClick = (tab) => {
     setSelectedTab(tab)
@@ -27,10 +27,30 @@ const Home = () => {
       <div className='container Homee'>
         <div className='row '>
           <ul className='nav'>
-            <li onClick={() => handleTabClick('stays')}>Stays</li>
-            <li onClick={() => handleTabClick('experiences')}>Experiences</li>
-            <li onClick={() => handleTabClick('cars')}>Cars</li>
-            <li onClick={() => handleTabClick('flights')}>Flights</li>
+            <li
+              className={selectedTab === 'stays' ? 'active' : ''}
+              onClick={() => handleTabClick('stays')}
+            >
+              Stays
+            </li>
+            <li
+              className={selectedTab === 'experiences' ? 'active' : ''}
+              onClick={() => handleTabClick('experiences')}
+            >
+              Experiences
+            </li>
+            <li
+              className={selectedTab === 'cars' ? 'active' : ''}
+              onClick={() => handleTabClick('cars')}
+            >
+              Cars
+            </li>
+            <li
+              className={selectedTab === 'flights' ? 'active' : ''}
+              onClick={() => handleTabClick('flights')}
+            >
+              Flights
+            </li>
           </ul>
         </div>
 

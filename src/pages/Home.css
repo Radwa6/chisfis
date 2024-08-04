@@ -43,6 +43,21 @@
   padding-right: 50px;
   color: #ffffff73;
 }
+.nav li {
+  padding: 10px;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.nav li.active {
+  color: white;
+  list-style-type: disc !important;
+}
+
+.nav li:not(.active) {
+  list-style-type: none;
+}
+
 .content {
   border-radius: 100px;
   padding: 20px;
@@ -111,7 +126,7 @@
 }
 .Happening h3 {
   color: #ffff;
-  font-size: 24px;
+  font-size: 42px;
   margin-top: 4%;
 }
 .Happening p {
@@ -141,7 +156,6 @@
 }
 .Featured ul {
   display: flex;
-  list-style-type: none;
   justify-content: left;
   text-align: left;
 }

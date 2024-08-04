@@ -1,0 +1,36 @@
+.About {
+  padding: 10% 0 5%;
+}
+.About h1 {
+  color: #ffff;
+  font-size: 50px;
+  margin: 30px 0;
+}
+.About p {
+  color: #ffffff73;
+  font-size: 18px;
+}
+.million {
+  background-color: #1d2746;
+  padding: 1px 20px;
+  border-radius: 10px;
+  margin: 40px 0;
+}
+.million h1 {
+  font-size: 40px;
+  margin: 14px 0;
+  color: #ffff;
+}
+
+.million p {
+  color: #ffffff73;
+  font-size: 18px;
+}
+.cust h2 {
+  color: #ffff;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.cust img {
+  border-radius: 10px;
+}

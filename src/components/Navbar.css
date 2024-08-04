@@ -43,3 +43,16 @@
   font-size: 20px;
   font-weight: bold;
 }
+.navbar .block {
+  position: absolute;
+  border-radius: 18px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #161b33f5;
+  border: 3px solid #3341864d;
+  /* box-shadow: 0px 4px 20px #33418675; */
+}
+.search-input {
+  border: none;
+  outline: none;
+}

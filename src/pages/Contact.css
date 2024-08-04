@@ -1,0 +1,54 @@
+.contact {
+  padding: 10% 0 5%;
+}
+.contact h1 {
+  color: #ffff;
+  font-size: 50px;
+  margin-bottom: 60px;
+}
+.contact h4 {
+  color: #ffff;
+  font-size: 20px;
+}
+.contact p {
+  color: #ffffff73;
+  font-size: 18px;
+}
+.contact i {
+  margin-right: 5px;
+}
+Form {
+  color: #a3a3a3;
+  font-weight: bold;
+}
+.create-account {
+  color: #a3a3a3;
+  text-align: right;
+  display: block;
+  margin-top: 10px;
+}
+a {
+  color: #a3a3a3;
+}
+a:hover {
+  color: #a3a3a3;
+}
+.input,
+textarea {
+  background-color: #161b33;
+  border: 1px solid #a3a3a347;
+  border-radius: 12px;
+  width: 100%;
+}
+.Message {
+  border-radius: 50px;
+  width: 30% !important;
+  background-color: #4f46e5;
+  padding: 10px;
+  border: none;
+}
+.input:focus {
+  background-color: transparent;
+  border-color: #f7f7f7;
+  outline: none;
+}

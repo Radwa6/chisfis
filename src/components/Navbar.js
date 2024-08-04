@@ -135,7 +135,7 @@ const Navbar = () => {
                       <form action='' method='POST'>
                         <input
                           type='search'
-                          className='block w-full border-neutral-200 focus:border-primary-300 focus:ring focus:ring-primary-200 focus:ring-opacity-50 bg-white dark:border-neutral-700 dark:focus:ring-primary-6000 dark:focus:ring-opacity-25 dark:bg-neutral-900 rounded-2xl text-sm font-normal h-11 px-4 py-3'
+                          className='block w-full '
                           placeholder='Type and press enter'
                         />
                         <input type='submit' hidden value='' />
@@ -147,7 +147,10 @@ const Navbar = () => {
             </Popover>
           </li>
           <li>
-            <button>Sign Up</button>
+            {' '}
+            <Link to='/LoginPage'>
+              <button>Sign Up</button>
+            </Link>
           </li>
         </ul>
       </div>
