@@ -29,6 +29,27 @@
   font-size: 20px;
   font-weight: bold;
 }
+@media (max-width: 600px) {
+  .Home {
+    padding: 60px;
+  }
+  .Home h1 {
+    font-size: 1.2rem;
+    padding: 40px 10px;
+    margin: 0;
+  }
+
+  .Home p {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  .Home button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    margin: 30px 0;
+  }
+}
 .Homee {
   margin-top: -5%;
   padding-bottom: 5%;
@@ -75,6 +96,34 @@
   display: flex;
   gap: 15px;
 }
+
+@media (max-width: 600px) {
+  .Homee {
+    padding: 60px;
+  }
+  .Homee ul li {
+    display: inline;
+    font-size: 14px;
+    padding-right: 10px;
+    color: #ffffff73;
+  }
+
+  .content {
+    margin-top: 0;
+    border-radius: 20px;
+  }
+
+  .Homee svg {
+    width: 6%;
+  }
+  .Homee h2 {
+    font-size: 1.2rem;
+  }
+  .Homee p {
+    font-size: 0.9rem;
+  }
+}
+
 .imgheader {
   position: relative;
   z-index: 90;
@@ -115,7 +164,17 @@
   font-size: 22px;
   margin-bottom: 6%;
 }
-
+@media (max-width: 600px) {
+  .Heading {
+    padding: 60px;
+  }
+  .Heading h2 {
+    font-size: 1.2rem;
+  }
+  .Heading p {
+    font-size: 0.9rem;
+  }
+}
 .Happening {
   padding: 80px 0;
 }
@@ -139,6 +198,20 @@
   padding: 4px 8px;
   border-radius: 30px;
   color: rgb(30 64 175);
+}
+@media (max-width: 600px) {
+  .Happening {
+    padding: 60px;
+  }
+  .Happening h2 {
+    font-size: 1.2rem;
+  }
+  .Happening h3 {
+    font-size: 0.9rem;
+  }
+  .Happening p {
+    font-size: 0.4rem;
+  }
 }
 .Featured {
   background-color: #111421;
@@ -189,6 +262,26 @@
   font-weight: bold;
   margin-top: 40px;
 }
+@media (max-width: 600px) {
+  .Featured {
+    padding: 30px;
+  }
+  .Featured h1 {
+    font-size: 1.2rem;
+  }
+  .Featured p {
+    font-size: 0.9rem;
+  }
+  .Featured li {
+    color: #ffff;
+    padding: 6px;
+    margin-right: 2px;
+    font-size: 10px;
+  }
+  .Featured button {
+    font-size: 14px;
+  }
+}
 .cart img {
   width: 100%;
 }
@@ -198,6 +291,14 @@
 .cart .container h3 {
   font-size: 18px;
   color: #ffff;
+}
+@media (max-width: 600px) {
+  .cart .container h3 {
+    font-size: 16px;
+  }
+  .cart .container p {
+    font-size: 12px;
+  }
 }
 .work {
   background-image: url(../../public/VectorHIW.2a56b4d0aa5690494df25bc0b2bb3bf6.svg);

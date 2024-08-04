@@ -34,3 +34,33 @@
 .cust img {
   border-radius: 10px;
 }
+@media (max-width: 600px) {
+  .About {
+    padding: 80px 40px 0px;
+  }
+  .About h1 {
+    font-size: 1.2rem;
+  }
+  .About p {
+    font-size: 0.8rem;
+  }
+  .million h1 {
+    font-size: 1rem;
+  }
+
+  .million p {
+    font-size: 0.8rem;
+  }
+  .cust h2 {
+    font-size: 1.4rem;
+  }
+  .Happening {
+    padding: 80px 0px;
+  }
+  .Happening h3 {
+    font-size: 1.2rem;
+  }
+  .Happening h5 {
+    font-size: 0.8rem;
+  }
+}

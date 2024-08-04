@@ -3,7 +3,7 @@ body {
 }
 
 .login-container {
-  max-width: 400px;
+  max-width: 500px;
   padding: 10% 0 5%;
   margin: 0 auto;
   background-color: #161b33;
@@ -74,4 +74,9 @@ a:hover {
   background-color: transparent;
   border-color: #f7f7f7;
   outline: none;
+}
+@media (max-width: 600px) {
+  .login-container {
+    padding: 100px 60px;
+  }
 }

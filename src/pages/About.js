@@ -21,7 +21,7 @@ const About = () => {
           />
         </div>
       </div>
-      <div className='row'>
+      <div className='row  mt-5'>
         <div>
           <h1>⛱ Founder</h1>
           <p>
@@ -30,7 +30,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className='row mt-5'>
+      <div className='row mt-5  mb-5'>
         <div className='col-sm-3'>
           <div className='cust'>
             <img
@@ -113,7 +113,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className='Happening container '>
+      <div className='Happening  '>
         <div className='row '>
           <div className='col-sm-6 p-5'>
             <div>

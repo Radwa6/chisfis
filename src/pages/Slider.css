@@ -44,3 +44,19 @@ title {
   text-align: left;
   color: #ffffff73;
 }
+@media (max-width: 600px) {
+  .slide img {
+    width: 100%;
+    height: 200px !important;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+
+  .text h1 {
+    font-size: 0.9rem;
+  }
+
+  .text p {
+    font-size: 0.2rem;
+  }
+}

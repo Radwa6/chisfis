@@ -1,9 +1,15 @@
 import React, { useState } from 'react'
+import Button from 'react-bootstrap/Button'
+import Container from 'react-bootstrap/Container'
+import Form from 'react-bootstrap/Form'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
 import { Link } from 'react-router-dom'
 import { Popover } from '@headlessui/react'
+
 import './Navbar.css'
 
-const Navbar = () => {
+function NavScrollExample() {
   const [darkMode, setDarkMode] = useState(false)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
 
@@ -16,8 +22,8 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='navbar row'>
-      <div className='col-sm-3'>
+    <Navbar expand='lg' className='justify-content-between'>
+      <Navbar.Brand href='#' className='order-lg-1'>
         <svg
           width='116'
           height='50'
@@ -42,120 +48,98 @@ const Navbar = () => {
             fill='white'
           ></path>
         </svg>
-      </div>
-      <div className='col-sm-5'>
-        <ul>
-          <li>
+      </Navbar.Brand>
+
+      <Navbar.Toggle
+        aria-controls='navbarScroll'
+        className='order-3 order-lg-2 ml-auto'
+      />
+
+      <Navbar.Collapse id='navbarScroll' className='order-2 order-lg-3 mx-auto'>
+        <Nav
+          className='my-2 my-lg-0 mx-auto'
+          style={{ maxHeight: '100px' }}
+          navbarScroll
+        >
+          <Nav.Link href='#action1'>
             <Link to='/'>Home</Link>
-          </li>
-          <li>
+          </Nav.Link>
+          <Nav.Link href='#action2'>
             <Link to='/about'>About</Link>
-          </li>
-          <li>
+          </Nav.Link>
+          <Nav.Link href='#action2'>
             <Link to='/contact'>Contact</Link>
-          </li>
-        </ul>
-      </div>
-      <div className='col-sm-4 '>
-        <ul>
-          <li>
-            <button
-              id='toggle-dark-mode'
-              onClick={toggleDarkMode}
-              className='dark-mode-button'
-              aria-label='Toggle dark mode'
-              style={{
-                color: '#ffff',
-                backgroundColor: '#161b33',
-                border: 'none',
-                padding: '10px',
-              }}
-            >
-              {darkMode ? (
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  strokeWidth='1.5'
-                  stroke='currentColor'
-                  aria-hidden='true'
-                  className='w-7 h-7'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z'
-                  ></path>
-                </svg>
-              ) : (
-                <svg
-                  width='24'
-                  height='24'
-                  fill='none'
-                  xmlns='http://www.w3.org/2000/svg'
-                  viewBox='0 0 24 24'
-                  stroke='currentColor'
-                  aria-hidden='true'
-                >
-                  <path
-                    fillRule='evenodd'
-                    d='M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z'
-                    clipRule='evenodd'
-                  ></path>
-                </svg>
-              )}
-            </button>
-          </li>
-          <li>
-            <Popover className='relative'>
-              {({ open }) => (
-                <>
-                  <Popover.Button
-                    className={`${
-                      open ? '' : 'text-opacity-90'
-                    } group inline-flex items-left`}
-                    onClick={toggleSearch}
-                    style={{
-                      color: '#ffff',
-                      backgroundColor: '#161b33',
-                      border: 'none',
-                      padding: '10px',
-                    }}
-                  >
-                    <i
-                      className={`las la-search h-5 w-5 text-white`}
-                      aria-hidden='true'
+          </Nav.Link>
+        </Nav>
+
+        <Form className='d-flex order-1 order-lg-4'>
+          <ul className='d-flex align-items-center ml-auto'>
+            <li>
+              <button
+                id='toggle-dark-mode'
+                onClick={toggleDarkMode}
+                className='dark-mode-button'
+                aria-label='Toggle dark mode'
+                style={{
+                  color: '#ffff',
+                  backgroundColor: '#161b33',
+                  border: 'none',
+                  padding: '10px',
+                }}
+              >
+                {/* أيقونة الوضع المظلم */}
+              </button>
+            </li>
+            <li>
+              <Popover className='relative'>
+                {({ open }) => (
+                  <>
+                    <Popover.Button
+                      className={`${
+                        open ? '' : 'text-opacity-90'
+                      } group inline-flex items-left`}
+                      onClick={toggleSearch}
                       style={{
-                        fontSize: '30px',
+                        color: '#ffff',
+                        backgroundColor: '#161b33',
+                        border: 'none',
+                        padding: '10px',
                       }}
-                    />
-                  </Popover.Button>
-                  {isSearchOpen && (
-                    <Popover.Panel className='absolute right-0 z-10 w-screen max-w-sm mt-3'>
-                      <form action='' method='POST'>
-                        <input
-                          type='search'
-                          className='block w-full '
-                          placeholder='Type and press enter'
-                        />
-                        <input type='submit' hidden value='' />
-                      </form>
-                    </Popover.Panel>
-                  )}
-                </>
-              )}
-            </Popover>
-          </li>
-          <li>
-            {' '}
-            <Link to='/LoginPage'>
-              <button>Sign Up</button>
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </nav>
+                    >
+                      <i
+                        className={`las la-search h-5 w-5 text-white`}
+                        aria-hidden='true'
+                        style={{
+                          fontSize: '30px',
+                        }}
+                      />
+                    </Popover.Button>
+                    {isSearchOpen && (
+                      <Popover.Panel className='absolute right-0 z-10 w-screen max-w-sm mt-3'>
+                        <form action='' method='POST'>
+                          <input
+                            type='search'
+                            className='block w-full '
+                            placeholder='Type and press enter'
+                          />
+                          <input type='submit' hidden value='' />
+                        </form>
+                      </Popover.Panel>
+                    )}
+                  </>
+                )}
+              </Popover>
+            </li>
+            <li>
+              <Link to='/LoginPage'>
+                <button>Sign Up</button>
+              </Link>
+            </li>
+          </ul>
+        </Form>
+      </Navbar.Collapse>
+    </Navbar>
   )
 }
 
-export default Navbar
+export default NavScrollExample

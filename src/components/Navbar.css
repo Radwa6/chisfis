@@ -24,6 +24,28 @@
 .navbar li {
   margin: 0 15px;
 }
+.navbar-brand {
+  margin-right: auto;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.ms-auto {
+  margin-left: auto;
+}
+
+.navbar-ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar-ul li {
+  display: inline;
+}
 
 .navbar a {
   text-decoration: none;
@@ -55,4 +77,9 @@
 .search-input {
   border: none;
   outline: none;
+}
+@media (max-width: 450px) {
+  .navbar {
+    padding: 20px;
+  }
 }

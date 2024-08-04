@@ -52,3 +52,11 @@ textarea {
   border-color: #f7f7f7;
   outline: none;
 }
+@media (max-width: 600px) {
+  .contact {
+    padding: 100px 40px 0px;
+  }
+  .Message {
+    width: 50% !important;
+  }
+}
